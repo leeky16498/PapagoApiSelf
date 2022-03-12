@@ -11,6 +11,10 @@
 		79039F8627D942750016C804 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79039F8527D942750016C804 /* ContentView.swift */; };
 		79039F8827D942750016C804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79039F8727D942750016C804 /* Assets.xcassets */; };
 		79039F8B27D942750016C804 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79039F8A27D942750016C804 /* Preview Assets.xcassets */; };
+		79039F9727D942D90016C804 /* PapagoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79039F9627D942D90016C804 /* PapagoDataService.swift */; };
+		79039F9927D944DF0016C804 /* TranslateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79039F9827D944DF0016C804 /* TranslateModel.swift */; };
+		79039F9B27D947920016C804 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79039F9A27D947920016C804 /* HomeView.swift */; };
+		79039F9D27D947A70016C804 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79039F9C27D947A70016C804 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		79039F8527D942750016C804 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79039F8727D942750016C804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79039F8A27D942750016C804 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79039F9627D942D90016C804 /* PapagoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapagoDataService.swift; sourceTree = "<group>"; };
+		79039F9827D944DF0016C804 /* TranslateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateModel.swift; sourceTree = "<group>"; };
+		79039F9A27D947920016C804 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		79039F9C27D947A70016C804 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		79039F8227D942750016C804 /* PapagoApiSelf */ = {
 			isa = PBXGroup;
 			children = (
-				79039F8327D942750016C804 /* PapagoApiSelfApp.swift */,
-				79039F8527D942750016C804 /* ContentView.swift */,
+				79039F9527D942AB0016C804 /* App */,
+				79039F9427D942A30016C804 /* utilities */,
+				79039F9327D9429B0016C804 /* Model */,
+				79039F9227D942960016C804 /* ViewModel */,
+				79039F9127D942920016C804 /* View */,
 				79039F8727D942750016C804 /* Assets.xcassets */,
 				79039F8927D942750016C804 /* Preview Content */,
 			);
@@ -65,6 +76,47 @@
 				79039F8A27D942750016C804 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79039F9127D942920016C804 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79039F9A27D947920016C804 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79039F9227D942960016C804 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79039F9C27D947A70016C804 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79039F9327D9429B0016C804 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79039F9827D944DF0016C804 /* TranslateModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79039F9427D942A30016C804 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				79039F9627D942D90016C804 /* PapagoDataService.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		79039F9527D942AB0016C804 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				79039F8327D942750016C804 /* PapagoApiSelfApp.swift */,
+				79039F8527D942750016C804 /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				79039F8627D942750016C804 /* ContentView.swift in Sources */,
+				79039F9D27D947A70016C804 /* HomeViewModel.swift in Sources */,
+				79039F9727D942D90016C804 /* PapagoDataService.swift in Sources */,
+				79039F9927D944DF0016C804 /* TranslateModel.swift in Sources */,
+				79039F9B27D947920016C804 /* HomeView.swift in Sources */,
 				79039F8427D942750016C804 /* PapagoApiSelfApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
